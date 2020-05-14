@@ -1,0 +1,4 @@
+streamlit
+Pillow==6.1.0
+pyqrcode
+requests
