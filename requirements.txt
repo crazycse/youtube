@@ -2,3 +2,4 @@ streamlit
 pillow>=6.2.0
 pyqrcode
 requests
+youtube_dl
