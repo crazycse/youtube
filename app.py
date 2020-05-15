@@ -4,8 +4,6 @@ st.title("Youtube Video Downloader")
 #st.markdown("*This app is in it's early stages!* Will be updated regularly.")
 user_input = st.text_input("Enter link to download", '')
 import os
-import pyqrcode  
-from pyqrcode import QRCode
 
 import requests
 some_url = user_input
@@ -25,14 +23,6 @@ except :
 if temp:
     s = 'youtube-dl '+user_input
     os.system(s)
-    url = pyqrcode.create(s) 
-    url.png('myqr.png', scale = 6)
-
-    from PIL import Image
-
-    image = Image.open("myqr.png")
-
-    st.image(image, caption='QR',use_column_width=True)
 
     l=os.listdir()
 
